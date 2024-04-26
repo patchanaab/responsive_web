@@ -192,6 +192,8 @@ section {
 }
 
 .featured {
+  h2{
+    font-family: "Pacifico", cursive;  }
   .burgers {
     display: flex;
     gap: 30px;
