@@ -4,14 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 :root {
-  --base: #555;
+  --base: #A9AD9B;
   --base-100: #f1f1f1;
-  --yellow: #ffda4b;
-  --yellow-100: #fffbe6;
-  --blue: #0a61ae;
+  --yellow: #6B7116;
+  --yellow-100: #e3af00;
+  --red: #D60000;
   --blue-100: #e2f8ff;
 }
 
@@ -19,6 +20,7 @@ h1 {
   font-size: 64px;
   line-height: 1;
   margin-bottom: 10px;
+  color: var(--red);
 }
 
 h2 {
@@ -27,6 +29,7 @@ h2 {
   margin-bottom: 10px;
   text-align: center;
   padding: 30px;
+  color: var(--red);
 }
 
 h3 {
@@ -34,26 +37,31 @@ h3 {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 20px;
+  color: var(--red);
 }
 
 a {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--red);
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lumanosimo", cursive;
   font-size: 20px;
+  background-image: radial-gradient(circle, #f8d7a4, #f5d58f, #efd479, #e5d464, #d8d54e);
 }
 
 header {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
   margin: auto;
   border-bottom: 1px solid;
+  border-radius: 5px;
+  background-color:var(--yellow-100);
 
   .logo-holder {
     display: flex;
@@ -71,12 +79,15 @@ header {
     }
     .logo-text {
       flex: 1;
+      color: var(--red);
     }
   }
 
   nav {
     display: flex;
     align-items: center;
+    background-color: var(--base-100);
+    border-radius: 10px;
     ul {
       display: flex;
       list-style-type: none;
@@ -146,7 +157,7 @@ section {
 .button {
   /* display: inline-block; */
   padding: 10px 30px;
-  background-color: var(--blue);
+  background-color: var(--red);
   color: var(--base-100);
   border-radius: 10px;
   transition: ease 0.3s all;
@@ -161,8 +172,8 @@ section {
     flex-direction: column;
   }
   .hero-first {
+    background-image: linear-gradient(to right bottom, #f4f4da, #f4f4ca, #f4f4ba, #f4f4a9, #f4f498, #f1f18d, #efef83, #ecec78, #e6e671, #e0e06a, #dbdb62, #d5d55b);
     flex: 1;
-    background-color: var(--blue-100);
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -179,9 +190,9 @@ section {
   }
   .hero-second {
     flex: 1;
-    background-color: var(--yellow);
+    background-color:var(--yellow-100);
     border-radius: 30px;
-    padding: 0px 30px;
+    padding: 30px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,9 +202,10 @@ section {
   }
 }
 
+
 .featured {
   h2{
-    font-family: "Pacifico", cursive;  }
+    font-family: "Lumanosimo", cursive;  }
   .burgers {
     display: flex;
     gap: 30px;
